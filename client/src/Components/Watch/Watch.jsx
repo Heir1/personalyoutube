@@ -14,8 +14,13 @@ const Watch = () => {
     const {id} = useParams();
     const [loading, setLoading] = useState(false)
     const [details, setDetails] = useState([])
+    const [answer, setAnswer] = useState(true)
     const navigate = useNavigate();
     moment.locale('fr')
+
+    const answerQuestion = () => {
+        setAnswer(!answer)
+    }
 
     useEffect(() => {
 
@@ -93,32 +98,85 @@ const Watch = () => {
                                     <div className='row'>
                                         <div className="col-md-8 col-sm-8 col-xs-8" style={{marginTop:"10px"}}>
                                             <div className='row'>
-                                                {
-                                                    // details.map((detail, index) => (
-                                                    //     <div className='col-md-12 col-sm-12 col-xs-12' key={index}>
-                                                    //         <img src={detail.snippet.thumbnails.high.url}  />
-                                                    //     </div>
-                                                    // ))
-                                                }
-                                            </div>
-                                            <div className='row'>
                                                 <div className='col-md-12 col-sm-12 col-xs-12'>
                                                     <h5>Descriptions</h5>                                               
                                                     {
                                                         details.map((detail, index) => (
-                                                            <p key={index} > <em>{ detail.snippet.description }</em>  </p>
+                                                            <p key={index} > <em>{detail.snippet.description.length > 300 ? `${detail.snippet.description.substring(0,300)}...` : detail.snippet.description}</em>  </p>
                                                         ))
                                                     }
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div className="row">
+                                                <div className="col-md-12 col-sm-12 col-xs-12">
+                                                    <form>
+                                                        <div className="form-group">
+                                                            <textarea name="" id="" cols="30" rows="10" className='form-control inputcomment' placeholder='Post your comment Here...'></textarea>
+                                                        </div>
+
+                                                        <div className="row">                                   <div className="col-md-6">
+                                                                <button className="btn btn-default default w-100">Cancel</button>
+                                                            </div>
+                                                            <div className="col-md-6">
+                                                                <button className="btn btn-dark w-100">Post</button>
+                                                            </div>
+                                                        </div>
+                                                     
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div className="row">
+                                                <div className="col-md-2">
+                                                    <div className="thumbnail">
+                                                        <img src={ `https://firebasestorage.googleapis.com/v0/b/fir-image-aa85c.appspot.com/o/images%2Fprofile.pngf7854e65-45dd-4f38-a3db-38838f64c7fa?alt=media&token=523c28d9-71eb-4254-982a-3486cd63f602` } class="img-responsive rounded-circle center-block d-block mx-auto"  style={{width:"50%", border:"solid black 3px"}} />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-10">
+                                                    <p>
+                                                        In this project, we will create a shopping cart using React and Stripe. Cooper Codes YouTube  Code:
+                                                        In this project, we will create a shopping cart using React and Stripe. Cooper Codes YouTube  Code:
+                                                    </p>
+                                                    <div className="row">
+                                                        <div className="col-md-3">
+                                                            <button className="btn btn-danger w-100" onClick={answerQuestion} >
+                                                                {
+                                                                    answer ? "Answer" : "Cancel"
+                                                                }
+                                                            </button>
+                                                        </div>
+                                                        {
+                                                            !answer && (
+                                                                <div className="col-md-12 col-sm-12 col-xs-12">
+                                                                    <form>
+                                                                        <div className="form-group">
+                                                                            <textarea name="" id="" cols="30" rows="10" className='form-control inputcomment' placeholder='Add your answer Here...'></textarea>
+                                                                        </div>
+
+                                                                        <div className="row">
+                                                                            <div className="col-md-12">
+                                                                                <button className="btn btn-dark w-100">Answer</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    
+
+                                                                    </form>
+                                                                </div>
+                                                            )
+                                                        }
+                                                     
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                             )
                         }
-
-
-                        
+    
                     </div>
                 </div>   
             </React.Fragment>
