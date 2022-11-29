@@ -399,4 +399,27 @@
         font-weight: bold;
         margin-top: 25px;
       }
+
+      .profile1{
+        border-radius: 50%;
+        border: solid black 3px;
+        /* text-align: center; */
+      }
+
+      .caption{
+        text-align: center;
+      }
+
+      .camera:hover{
+        cursor: pointer;
+      }
+
+      .editbutton:hover{
+        background: #000;
+        color: white;
+      }
+
+      .formprofile{
+        margin-top: -15px;
+      }
 }

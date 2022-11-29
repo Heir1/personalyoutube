@@ -31,6 +31,12 @@ export const Siderbar = () => {
                     </div>
                 </NavLink>
 
+                <NavLink to={"/profile"} className={({ isActive }) => (isActive ? 'active' : 'funcStyle')} style={{textDecoration:"none", color:'white'}}>
+                    <div>
+                        Profile
+                    </div>
+                </NavLink>
+
                 <div className="col-xs-3 logoutStyle">
                     <button className="btn btn-danger logoutStyle" onClick={logout} >Logout</button>
                 </div>
