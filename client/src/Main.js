@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import Watch from './Components/Watch/Watch';
 import Search from './Components/Searchedvideo/Search';
 import Profile from './Components/Profile/Profile';
-// import Notification from './Components/Notification/Notification';
+import Notifications from './Components/Notification/Notfications';
 import Social from './Components/Social/Social';
 
 const Main = () => {
@@ -25,7 +25,7 @@ const Main = () => {
         <Route path="/profile" element={<Profile/>} />
         {/* <Route path="/profile/social/:id" element={<Social/>} /> */}
         <Route path="/profile/edit-user/:id" element={<Profile/>} />
-        {/* <Route path="/notifications" element={<Notification/>} /> */}
+        <Route path="/notifications" element={<Notifications/>} />
         <Route path='/mysubscriptions/:id' element={<Watch/>} />
         <Route path='/popularvideos/:id' element={<Watch/>} />
         <Route path='/mychannels/:id' element={<Home/>} />
