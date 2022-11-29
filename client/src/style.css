@@ -1,0 +1,402 @@
+@media only screen and (max-width: 760px) {
+    .headerStyle{
+        /* display:  !important; */
+        height: 80px; 
+        background: #1b1b1b; 
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        /* border-bottom: 3px solid #d63384; */
+        border-bottom: 3px solid #dc3545;
+    }
+
+    .channelDesign{
+        border: 2px solid black;
+        border-radius: 20px;
+        padding-top: 20px;
+/*         margin-left: 50px; */
+        margin-bottom: 20px;
+        background: #242424;
+        color: white;
+    }
+
+    .channelDesign:hover{
+        cursor: pointer;
+    }
+
+
+    .deskTop{
+        display: none;
+    }
+
+    .headerStyle1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .sideStyle{
+        height: 100px; 
+        background: #242424;
+        position: fixed;
+        /* position: -webkit-sticky;
+        position: sticky;
+        left: 0; */
+    }
+
+    .sideStyle1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        color: white;
+        text-align: center;
+        padding-top: 12px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .searchStyle{
+        margin-top: 20px;
+    }
+    
+    .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        border: 3px solid white;
+    }
+    
+    .profile{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        border: 3px solid #d63384;
+    }
+
+    .videoImage{
+        border-radius: 20px;
+        border: 3px solid grey;
+        transition: transform .4s;
+    }
+
+    .thumbnail{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .logoutStyle{
+        margin-top : 5px;
+        width: 300%;
+    }
+
+    .deskTop{
+        display: none;
+    }
+
+    /* .mobile{
+        margin-top: 20px;
+    }
+
+    .example1{
+        margin-top: 19px;
+    } */
+
+    input.example1[type=text] {
+        padding: 5px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      
+      form.example1 button {
+        float: left;
+        width: 20%;
+        padding: 7px;
+        /* background: #2196F3; */
+        /* background: #d63384; */
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      
+      form.example1 button:hover {
+        background: #000;
+      }
+      
+      form.example1::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
+      .example{
+        margin-top: 19px;
+    }
+
+    form.example input[type=text] {
+        padding: 7px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+      
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 7px;
+        /* background: #2196F3; */
+        /* background: #d63384; */
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      
+      form.example button:hover {
+        background: #000;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
+
+@media only screen and (min-width: 768px) {
+    .headerStyle{
+        height: 80px; 
+        background: #1b1b1b; 
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        border-bottom: 3px solid white;
+    }
+    
+    .sideStyle{
+        height: 500vh;
+        background: #242424;
+    }
+
+    .sideStyle1{
+        color: white;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+
+    .funcStyle{
+        background: black;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-style: italic;
+        border-top: 1px solid white;
+        border-radius: 20px;
+        text-align: center;
+        transition: transform .4s;
+        width: 200px;
+    }
+
+    .active{
+        background: #dc3545;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-style: italic;
+        border-top: 1px solid white;
+        border-radius: 20px;
+        text-align: center;
+        transition: transform .4s;
+        width: 200px;
+    }
+
+    /* .funcStyle1{
+
+    } */
+
+    .funcStyle:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .logoutStyle{
+        margin-top: 50px;
+    }
+    .searchStyle{
+        margin-top: 20px;
+    }
+    
+    .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        border: 3px solid white;
+    }
+    
+    .profile{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        border: 3px solid #d63384;
+    }
+
+    .videoImage{
+        border-radius: 20px;
+        border: 3px solid grey;
+        transition: transform .4s;
+    }
+
+    .videoImage:hover{
+        transform: scale(1.1);
+        opacity: 0.5;
+        border: 3px solid #d63384;
+    }
+
+    .thumbnail{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .thumbnail:hover{
+        cursor: pointer;
+    }
+
+    .logoutStyle{
+        width: 100%;
+/*       margin-top : 20px; */
+    }
+
+    .channelDesign{
+        border: 2px solid black;
+        border-radius: 20px;
+        padding-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        background: #242424;
+        color: white;
+    }
+
+    .channelDesign:hover{
+        cursor: pointer;
+    }
+
+    .caption{
+        margin-top: 7px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .videoLive{
+        border-radius: 20px;
+        border: 3px solid grey;
+        transition: transform .4s;
+    }
+
+    .videoLive:hover{
+        opacity: 0.5;
+        border: 3px solid #d63384;
+    }
+
+    input.example1[type=text] {
+        padding: 7px;
+        padding-left: 20px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 17px;
+      }
+      
+      form.example1 button {
+        float: left;
+        /* width: 10%; */
+        padding: 7px;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 17px;
+      }
+      
+      form.example1 button:hover {
+        background: #000;
+      }
+      
+      form.example1::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      form.example input[type=text] {
+        padding: 7px;
+        padding-left: 20px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-top: 17px;
+      }
+      
+      form.example button {
+        float: left;
+        width: 10%;
+        padding: 7px;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 17px;
+      }
+      
+      form.example button:hover {
+        background: #000;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .notificationsign{
+        background: #dc3545;
+        color: white;
+        border-radius: 50%;
+        width: 30px;
+        font-weight: bold;
+        margin-top: 25px;
+      }
+}

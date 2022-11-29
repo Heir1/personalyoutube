@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            </a>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-4 offset-4">
+                <h3>Creat user from youtube</h3>
+                <form action="/saveUser" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Enter your full name Here" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="channelid" placeholder="Enter your channel id here" required>
+                    </div>
+                    <!-- linkedIn -->
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="image" placeholder="Enter your image url here" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="linkedIn" placeholder="Enter your linked In url Here" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="twitter" placeholder="Enter your twitter url Here" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="facebook" placeholder="Enter your facebook url Here" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="instagram" placeholder="Enter your instagram url Here" required>
+                    </div>
+                    <input class="btn btn-primary w-100" type="submit" value="Create">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
