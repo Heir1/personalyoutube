@@ -422,4 +422,20 @@
       .formprofile{
         margin-top: -15px;
       }
+
+      .default{
+        border: solid black 1px;
+      }
+
+      .actions{
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .inputcomment{
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: solid black 1px;
+      }
 }
