@@ -46,7 +46,7 @@ const Cardprofile = () => {
 
     return(
         <>
-            <div className="col-md-10" style={{width:"75%", height:"500px", border:"solid black 2px", marginTop:"30px", marginLeft:"50px", borderRadius:"20px", paddingTop:"50px"}}>
+            <div className="col-md-10 col-sm-10 col-xs-10" style={{marginTop: "60px"}}>
                 {
                     loading ? (
 
@@ -59,43 +59,52 @@ const Cardprofile = () => {
                     )
                     :
                     (
-                        <div className="row">
-
-                            <div className="col-md-4 offset-5">
-
-                                <img src={ image } className="profile1" />
-
-                                <br />
-                                <br />
-                                
+                        <>
+                            <div className="row">
+                                <div className="col-md-4 offset-4">
+                                    <div className="thumbnail">
+                                        <img src={image} alt="Lights" class="img-responsive center-block d-block mx-auto profile1"  style={{width:"50%"}}/>
+                                    </div>
+                                    <div className="caption" style={{marginTop:"20px"}}>
+                                        <h4>{username}</h4>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="col-md-4 offset-4">
-                            <h3>{username}</h3>
-                            <NavLink to={"/profile/edit-user/"+userid} className="btn btn-default default" style={{border:"solid black 1px"}}>
-                                Edit profile
-                            </NavLink>
+                            <div className="row" style={{marginTop:"20px"}}>
+                                <div className="col-md-4 offset-4">
+                                    <NavLink to={"/profile/edit-user/"+userid} className="btn btn-default editbutton w-100" style={{border:"solid black 1px"}}>
+                                        Edit profile
+                                    </NavLink>
+                                </div>
                             </div>
 
-                            <br />
+                            <div className="row" style={{marginTop:"30px"}}>
 
-                            <div className="social-media">
+                                <div className="col-md-2 offset-2">
+                                    <NavLink to={userlinkedin} target="_blank" className="btn btn-dark w-100" style={{border:"solid black 1px"}}><i class="bi bi-linkedin"></i>Linked In
+                                    </NavLink>
+                                </div>
 
-                            <NavLink to={userlinkedin} target="_blank" className="btn btn-dark" style={{border:"solid black 1px"}}><i class="bi bi-linkedin" style={{marginRight:"20px"}}></i>Linked In account
-                            </NavLink>
+                                <div className="col-md-2">
 
-                            <NavLink to={usertwitter} className="btn btn-dark" style={{border:"solid black 1px"}}> <i class="bi bi-twitter" style={{marginRight:"20px"}}></i>Twitter account
-                            </NavLink>
+                                    <NavLink to={usertwitter} className="btn btn-dark w-100" style={{border:"solid black 1px"}}> <i class="bi bi-twitter"></i>Twitter
+                                    </NavLink>
+                                </div>
 
-                            <NavLink to={userfacebook} className="btn btn-dark" style={{border:"solid black 1px"}}> <i class="bi bi-facebook" style={{marginRight:"20px"}}></i>Facebook account
-                            </NavLink>
+                                <div className="col-md-2">
+                                    <NavLink to={userfacebook} className="btn btn-dark w-100" style={{border:"solid black 1px"}}> <i class="bi bi-facebook"></i>Facebook
+                                    </NavLink>
+                                </div>
 
-                            <NavLink to={userinstagram} className="btn btn-dark" style={{border:"solid black 1px"}}> <i class="bi bi-instagram" style={{marginRight:"20px"}}></i>Instagram account
-                            </NavLink>
+                                <div className="col-md-2">
+                                    <NavLink to={userinstagram} className="btn btn-dark w-100" style={{border:"solid black 1px"}}> <i class="bi bi-instagram"></i>Instagram
+                                    </NavLink>
+
+                                </div>
 
                             </div>
-
-                        </div>
+                        </>
                     )
                 }
 
